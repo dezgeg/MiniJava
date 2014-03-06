@@ -1,0 +1,43 @@
+class TestLogicalOps {
+    public static void main() { 
+        System.out.println(!false);
+        System.out.println(!true);
+        System.out.println();
+
+        System.out.println(false && false);
+        System.out.println(false && true);
+        System.out.println(true && false);
+        System.out.println(true && true);
+        System.out.println();
+
+        System.out.println(false || false);
+        System.out.println(false || true);
+        System.out.println(true || false);
+        System.out.println(true || true);
+        System.out.println();
+
+        Dont dont;
+        dont = new Dont();
+        Call call;
+        call = new Call();
+
+        System.out.println(false && dont.call_me());
+        System.out.println(false && dont.call_me() && dont.call_me());
+        System.out.println(true && call.me());
+        System.out.println(true || dont.call_me());
+        System.out.println(true || dont.call_me() || dont.call_me());
+        System.out.println(false || call.me());
+        assert call.getCount() == 2;
+    }
+}
+class Dont {
+    public boolean call_me() { assert false; return true; }
+}
+class Call {
+    int count;
+    public boolean me() {
+        count = count + 1;
+        return true;
+    }
+    public int getCount() { return this.count; }
+}

@@ -1,0 +1,22 @@
+class C
+{
+    public void die() { }
+    public void test()
+    {
+        assert this.die();
+        if(this.die()) ;
+        while(this.die()) ;
+        System.out.println(this.die());
+        int x;
+        x = this.die();
+        x = this.die() + 1;
+
+        boolean[] bs;
+        bs = new boolean[this.die()];
+        bs[this.die()] = true;
+        bs[0] = this.die();
+        bs[1] = !this.die();
+
+        return this.die();
+    }
+}

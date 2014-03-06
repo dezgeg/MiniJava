@@ -1,0 +1,53 @@
+erroneus_exprs.mj:6:8-21: error: Primitive type 'boolean' is not acceptable in new expression
+            new boolean() + false;
+            ^^^^^^^^^^^^^
+erroneus_exprs.mj:7:9-26: error: Both operands to the binary '%' operator should have type 'int', but are '(null constant type)' and 'Main'
+            (null % new Main()) / 2; // in binop's left branch
+             ^^^^^^^^^^^^^^^^^
+erroneus_exprs.mj:8:8-31: error: Both operands to the binary '*' operator should have type 'int', but are 'int' and 'boolean'
+            99 * (null < new int()); // in right branch, also deeper error
+            ^^^^^^^^^^^^^^^^^^^^^^^
+erroneus_exprs.mj:8:21-30: error: Primitive type 'int' is not acceptable in new expression
+            99 * (null < new int()); // in right branch, also deeper error
+                         ^^^^^^^^^
+erroneus_exprs.mj:9:9-21: error: Both operands to the binary '>' operator should have type 'int', but are 'boolean' and 'boolean'
+            (false > true) || (null <= 99);
+             ^^^^^^^^^^^^
+erroneus_exprs.mj:9:27-37: error: Both operands to the binary '<=' operator should have type 'int', but are '(null constant type)' and 'int'
+            (false > true) || (null <= 99);
+                               ^^^^^^^^^^
+erroneus_exprs.mj:10:10-27: error: Operands to operator 'the binary '!=' operator' require operands with similar types, got 'int' and 'Main[]'
+            !(1 != new Main[10]);
+              ^^^^^^^^^^^^^^^^^
+erroneus_exprs.mj:11:10-19: error: Both operands to the binary '>=' operator should have type 'int', but are '(null constant type)' and 'int'
+            -(null >= 1);
+              ^^^^^^^^^
+erroneus_exprs.mj:11:10-19: error: Operand to the unary '-' operator should have type 'int', but has 'boolean'
+            -(null >= 1);
+              ^^^^^^^^^
+erroneus_exprs.mj:12:8-27: error: Lvalue expression expected in assignment
+            new void[10].length = 1 == 1;
+            ^^^^^^^^^^^^^^^^^^^
+erroneus_exprs.mj:13:8-17: error: Primitive type 'int' is not acceptable in new expression
+            new int().asddsds(new Main(), null && 1);
+            ^^^^^^^^^
+erroneus_exprs.mj:13:38-47: error: Both operands to the binary '&&' operator should have type 'boolean', but are '(null constant type)' and 'int'
+            new int().asddsds(new Main(), null && 1);
+                                          ^^^^^^^^^
+erroneus_exprs.mj:14:23-33: error: Type 'Main' not convertible to type of argument 1 of method 'foo': 'int'
+            new Main().foo(new Main(), new int(), true || false);
+                           ^^^^^^^^^^
+erroneus_exprs.mj:14:35-44: error: Primitive type 'int' is not acceptable in new expression
+            new Main().foo(new Main(), new int(), true || false);
+                                       ^^^^^^^^^
+erroneus_exprs.mj:14:46-59: error: Type 'boolean' not convertible to type of argument 3 of method 'foo': 'int'
+            new Main().foo(new Main(), new int(), true || false);
+                                                  ^^^^^^^^^^^^^
+erroneus_exprs.mj:15:11-24: error: Primitive type 'boolean' is not acceptable in new expression
+            if(new boolean()) ;
+               ^^^^^^^^^^^^^
+erroneus_exprs.mj:16:14-32: error: Operands to operator 'the binary '==' operator' require operands with similar types, got 'C' and 'B'
+            while(new C() == new B()) ;
+                  ^^^^^^^^^^^^^^^^^^
+
+17 errors in total.

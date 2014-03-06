@@ -1,0 +1,9 @@
+class Main
+{
+    int foo;
+    public static void main()
+    {
+        foo = 42; // should complain
+        this.foo = 42; // should complain
+    }
+}

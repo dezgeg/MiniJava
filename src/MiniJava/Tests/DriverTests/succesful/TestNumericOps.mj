@@ -1,0 +1,41 @@
+class TestNumericOps {
+    public static void main() {
+        int minVal;
+        int maxVal;
+        minVal = -2147483648;
+        maxVal = 2147483647;
+
+        assert 1 + 2 == 3;
+        assert 2 + -4 == -2;
+
+        assert 2 - 3 == -1;
+        assert 2 - -4 == 6;
+
+        assert 6 * 7 == 42;
+        assert -1 * -2 == 2;
+
+        assert 10 / 3 == 3;
+        assert 10 / -1 == -10;
+
+        assert 10 % 3 == 1;
+        assert -4 % 3 == -1;
+
+//        assert minVal / -1 == minVal; // This should work, but throws an overflow exception. This is definitely a CLR bug.
+        assert -minVal == minVal;
+        assert minVal - 1 == maxVal;
+        assert minVal * 2 == 0;
+        assert maxVal + 1 == minVal;
+
+        assert -0 == 0;
+        assert new Abs().abs(-42) == 42;
+        assert new Abs().abs(0) == 0;
+        assert new Abs().abs(1) == 1;
+    }
+}
+class Abs {
+    public int abs(int x) {
+        if(x < 0)
+            return -x;
+        return x;
+    }
+}

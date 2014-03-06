@@ -1,0 +1,32 @@
+duplicate_variables.mj:4:27-36: error: Local variable 'x' already declared
+        public void foo(int x, boolean x) {} // should complain
+                               ^^^^^^^^^
+duplicate_variables.mj:4:20-25: note: 'x' previously declared here
+        public void foo(int x, boolean x) {} // should complain
+                        ^^^^^
+duplicate_variables.mj:6:4-26: error: Duplicate method 'foo'
+        public void foo(int x)
+        ^^^^^^^^^^^^^^^^^^^^^^
+duplicate_variables.mj:4:4-37: note: Method 'foo' first declared here
+        public void foo(int x, boolean x) {} // should complain
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+duplicate_variables.mj:8:8-17: error: Local variable 'x' already declared
+            boolean x; //should complain
+            ^^^^^^^^^
+duplicate_variables.mj:6:20-25: note: 'x' previously declared here
+        public void foo(int x)
+                        ^^^^^
+duplicate_variables.mj:15:12-21: error: Local variable 'y' already declared
+                boolean y; // should complain
+                ^^^^^^^^^
+duplicate_variables.mj:13:8-13: note: 'y' previously declared here
+            int y;
+            ^^^^^
+duplicate_variables.mj:22:8-17: error: Local variable 'z' already declared
+            boolean z; // should complain
+            ^^^^^^^^^
+duplicate_variables.mj:21:8-13: note: 'z' previously declared here
+            int z;
+            ^^^^^
+
+5 errors in total.

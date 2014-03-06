@@ -1,0 +1,9 @@
+class List
+{
+    List next;
+    int value;
+    public List skipThree()
+    {
+        return this.foo; // should complain
+    }
+}

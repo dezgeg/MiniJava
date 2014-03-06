@@ -1,0 +1,7 @@
+class Main
+{
+    public static void main() {}
+}
+class A extends B {}
+class B extends C {}
+class C extends A {} // should complain

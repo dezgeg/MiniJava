@@ -1,0 +1,20 @@
+class Main
+{
+    public void foo(int x, int y, int z) {}
+    public static void main()
+    {
+        new boolean() + false;
+        (null % new Main()) / 2; // in binop's left branch
+        99 * (null < new int()); // in right branch, also deeper error
+        (false > true) || (null <= 99);
+        !(1 != new Main[10]);
+        -(null >= 1);
+        new void[10].length = 1 == 1;
+        new int().asddsds(new Main(), null && 1);
+        new Main().foo(new Main(), new int(), true || false);
+        if(new boolean()) ;
+        while(new C() == new B()) ;
+    }
+}
+class C {}
+class B {}

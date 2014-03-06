@@ -1,0 +1,11 @@
+unknown_characters.mj:5:14-19: error: Unknown characters in source file
+             int f$#uc@k;
+                  ^^^^^
+unknown_characters.mj:5:16-18: error: Syntax error, unexpected Identifier, expecting ';'
+             int f$#uc@k;
+                    ^^
+unknown_characters.mj:6:9-39: error: Unknown characters in source file
+             $$@$@$@$@$@$@@$@$@$@$@~~~~~~~~
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+3 errors in total.

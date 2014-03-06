@@ -1,0 +1,8 @@
+bad_override.mj:7:4-20: error: Cannot declare method 'public int foo()' since its type is different from the superclasses' method
+        public int foo()
+        ^^^^^^^^^^^^^^^^
+bad_override.mj:3:4-21: note: Superclass method 'public void foo()' declared here
+        public void foo() {}
+        ^^^^^^^^^^^^^^^^^
+
+1 errors in total.

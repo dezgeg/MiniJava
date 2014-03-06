@@ -1,0 +1,21 @@
+class TestCalls {
+    public static void main() {
+        D d;
+        d = new D();
+        D[] ds;
+        ds = new D[1];
+        ds[0] = d;
+        new TestCalls().test(42, true, d, d, null, ds);
+    }
+    public void test(int i, boolean b, B bas, D der, B[] bs, D[] ds)
+    {
+        assert i == 42;
+        assert b;
+        assert bas == der;
+        assert bs == null;
+        assert ds[0] == bas;
+        assert ds.length == 1;
+    }
+}
+class B {}
+class D extends B {}

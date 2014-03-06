@@ -1,0 +1,27 @@
+class TestPrimitiveArrays {
+    public static void main() {
+        int[] is;
+        assert is == null;
+        is = new int[10];
+        assert is.length == 10;
+
+        int i;
+        i = 0;
+        while(i < is.length)
+        {
+            is[i] = i * i;
+            i = i + 1;
+        }
+        assert is[9] == 81;
+        assert is[0] == 0;
+
+        boolean[] bs;
+        bs = new boolean[1 + 1];
+        assert bs.length == 2;
+        assert !bs[0];
+        bs[1] = true;
+        assert bs[0] != bs[1];
+    }
+}
+class B {}
+class D extends B {}

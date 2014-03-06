@@ -1,0 +1,12 @@
+class NonasciiCharacters
+{
+    public static void main()
+    {
+הצהצהצהצהצהצ	ASDSADDASDSADS	צהצהצהצהצהצהצהצהצהצהצהצ
+         System.out.println(-1);
+    }
+}
+/*
+צהצהצהצהצהצהצהצהצהצהצהצ DSDSDS צהצהצהצהצהצהצהצהצהצהצהצ
+*/
+// צהצהצהצהצהצהצהצהצהצהצהצ DSDSDS צהצהצהצהצהצהצהצהצהצהצהצ

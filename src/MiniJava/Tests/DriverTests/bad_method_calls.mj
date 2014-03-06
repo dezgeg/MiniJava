@@ -1,0 +1,17 @@
+class Main
+{
+    public static void main()
+    {
+        1.foo();
+        true.bar();
+        null.baz();
+        new int[10].quux();
+        
+        new Foo().bar();
+        new Main().bar();
+    }
+}
+class Foo
+{
+    public void foo(int x) {}
+}

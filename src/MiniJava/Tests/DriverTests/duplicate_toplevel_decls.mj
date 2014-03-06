@@ -1,0 +1,24 @@
+class A {}
+class A {} // should complain
+
+class B
+{
+    int foo;
+    boolean foo; // should complain
+}
+
+class C
+{
+    public void foo() {}
+    public int foo(boolean bar) {} // should complain
+}
+
+class Main12
+{
+    public static void main() {}
+    public static void main() {}
+}
+class Main3
+{
+    public static void main() {}
+}

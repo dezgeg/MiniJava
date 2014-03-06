@@ -1,0 +1,35 @@
+bad_void_value.mj:6:15-25: error: Value in assert expression should have type 'boolean', but has 'void'
+            assert this.die();
+                   ^^^^^^^^^^
+bad_void_value.mj:7:11-21: error: Condition in 'if' statement should have type 'boolean', but has 'void'
+            if(this.die()) ;
+               ^^^^^^^^^^
+bad_void_value.mj:8:14-24: error: Condition in 'while' statement should have type 'boolean', but has 'void'
+            while(this.die()) ;
+                  ^^^^^^^^^^
+bad_void_value.mj:9:27-37: error: Non-void expression expected
+            System.out.println(this.die());
+                               ^^^^^^^^^^
+bad_void_value.mj:11:8-22: error: Value of type 'void' is not assignable to lvalue of type 'int'
+            x = this.die();
+            ^^^^^^^^^^^^^^
+bad_void_value.mj:12:12-26: error: Both operands to the binary '+' operator should have type 'int', but are 'void' and 'int'
+            x = this.die() + 1;
+                ^^^^^^^^^^^^^^
+bad_void_value.mj:15:25-35: error: Array length expression should have type 'int', but has 'void'
+            bs = new boolean[this.die()];
+                             ^^^^^^^^^^
+bad_void_value.mj:16:11-21: error: Array indexing expression should have type 'int', but has 'void'
+            bs[this.die()] = true;
+               ^^^^^^^^^^
+bad_void_value.mj:17:8-26: error: Value of type 'void' is not assignable to lvalue of type 'boolean'
+            bs[0] = this.die();
+            ^^^^^^^^^^^^^^^^^^
+bad_void_value.mj:18:17-27: error: Operand to the unary '!' operator should have type 'boolean', but has 'void'
+            bs[1] = !this.die();
+                     ^^^^^^^^^^
+bad_void_value.mj:20:15-25: error: Non-void expression expected
+            return this.die();
+                   ^^^^^^^^^^
+
+11 errors in total.

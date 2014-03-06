@@ -1,0 +1,20 @@
+bad_method_calls.mj:5:8-9: error: Primitive type 'int' is not acceptable in object to be called
+            1.foo();
+            ^
+bad_method_calls.mj:6:8-12: error: Primitive type 'boolean' is not acceptable in object to be called
+            true.bar();
+            ^^^^
+bad_method_calls.mj:7:8-12: error: Null literal type is not acceptable in object to be called
+            null.baz();
+            ^^^^
+bad_method_calls.mj:8:8-19: error: Array type int[] is not acceptable in object to be called
+            new int[10].quux();
+            ^^^^^^^^^^^
+bad_method_calls.mj:10:8-23: error: No method 'bar' found in class 'Foo'
+            new Foo().bar();
+            ^^^^^^^^^^^^^^^
+bad_method_calls.mj:11:8-24: error: No method 'bar' found in class 'Main'
+            new Main().bar();
+            ^^^^^^^^^^^^^^^^
+
+6 errors in total.

@@ -1,0 +1,8 @@
+nonstatic_references_from_main.mj:6:8-11: error: Cannot reference non-static member 'foo' in static context
+            foo = 42; // should complain
+            ^^^
+nonstatic_references_from_main.mj:7:8-12: error: Cannot reference 'this' in static context
+            this.foo = 42; // should complain
+            ^^^^
+
+2 errors in total.

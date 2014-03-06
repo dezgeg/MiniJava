@@ -1,0 +1,26 @@
+bad_assignments.mj:5:8-17: error: Lvalue expression expected in assignment
+            new Foo() = null;
+            ^^^^^^^^^
+bad_assignments.mj:6:8-12: error: Lvalue expression expected in assignment
+            this = 42;
+            ^^^^
+bad_assignments.mj:7:8-13: error: Lvalue expression expected in assignment
+            false = true;
+            ^^^^^
+bad_assignments.mj:8:8-26: error: Lvalue expression expected in assignment
+            new int[10].length = false;
+            ^^^^^^^^^^^^^^^^^^
+bad_assignments.mj:10:8-14: error: Value of type 'int' is not assignable to lvalue of type 'boolean'
+            b = 42;
+            ^^^^^^
+bad_assignments.mj:12:8-23: error: Value of type 'Foo' is not assignable to lvalue of type 'Bar'
+            bar = new Foo();
+            ^^^^^^^^^^^^^^^
+bad_assignments.mj:13:8-18: error: Lvalue expression expected in assignment
+            new void() = new void();
+            ^^^^^^^^^^
+bad_assignments.mj:13:21-31: error: Primitive type 'void' is not acceptable in new expression
+            new void() = new void();
+                         ^^^^^^^^^^
+
+8 errors in total.

@@ -1,0 +1,14 @@
+class Main
+{
+    public void foo() {}
+    public static void main()
+    {
+        (new int[10])[0] = false; // should complain
+        (new int[10])[0] = null; // should complain
+        (new int[10])[0] = new Main().foo(); // should complain
+
+        (new D[10])[0] = new C();
+    }
+}
+class C {}
+class D extends C {}

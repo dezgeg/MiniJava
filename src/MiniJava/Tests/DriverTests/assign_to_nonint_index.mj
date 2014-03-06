@@ -1,0 +1,16 @@
+class Main
+{
+    public void foo() {}
+    public static void main()
+    {
+        (new int[10])[true] = 42; // should complain
+        (new int[10])[null] = 42; // should complain
+        (new int[10])[new Main()] = 42; // should complain
+        (new int[10])[new Main().foo()] = 42; // should complain
+
+        System.out.println((new int[10])[true]); // should complain
+        System.out.println((new int[10])[null]); // should complain
+        System.out.println((new int[10])[new Main()]); // should complain
+        System.out.println((new int[10])[new Main().foo()]); // should complain
+    }
+}

@@ -1,0 +1,52 @@
+class TestInheritance {
+    public static void main() { 
+        B b;
+        B d;
+        System.out.println(b);
+        System.out.println(d);
+        b = new B();
+        d = new D();
+        System.out.println(b);
+        System.out.println(d);
+        assert b.overridden() == 1;
+        assert d.overridden() == 2;
+        assert b.wrap_overridden() == 1;
+        assert d.wrap_overridden() == 2;
+    }
+}
+class B
+{
+    int inB;
+    public void setInB(int x)
+    {
+        this.inB = x;
+    }
+    public int getInB()
+    {
+        return this.inB;
+    }
+    public int overridden()
+    {
+        return 1;
+    }
+    public int wrap_overridden()
+    {
+        return this.overridden();
+    }
+}
+class D extends B
+{
+    boolean inD;
+    public void setInD(boolean x)
+    {
+        this.inD = x;
+    }
+    public boolean getInD()
+    {
+        return this.inD;
+    }
+    public int overridden()
+    {
+        return 2;
+    }
+}

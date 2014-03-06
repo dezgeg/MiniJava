@@ -1,0 +1,15 @@
+class A 
+{
+    public void foo()
+    {
+        int x;
+        B b; // should complain
+        B[] bs; // should complain
+        void v;
+        void[] vs;
+    }
+    public void bad1(B b) {}
+    public void bad2(B[] bs) {}
+    public void bad3(void v) {}
+    public void bad4(void[] vs) {}
+}

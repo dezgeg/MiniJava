@@ -1,0 +1,8 @@
+class CrashTestInfiniteRecursion {
+    public static void main() {
+        System.out.println(new Die().die());
+    }
+}
+class Die {
+    public int die() { return 1 + this.die(); }
+}

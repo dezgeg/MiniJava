@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MiniJava.Backend.CodeGen" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="3.75" Width="1.75" />
+    <Members>
+      <Method Name="AllocScratchRegister" Hidden="true" />
+      <Method Name="BeginBuffer" Hidden="true" />
+      <Field Name="bufferedOutput" Hidden="true" />
+      <Field Name="buffering" Hidden="true" />
+      <Method Name="CodeGen" Hidden="true" />
+      <Method Name="Emit" Hidden="true" />
+      <Method Name="emitAssign" Hidden="true" />
+      <Method Name="EmitLoadThis" Hidden="true" />
+      <Method Name="EmitMethod" Hidden="true" />
+      <Method Name="EmitNot" Hidden="true" />
+      <Method Name="EndBuffer" Hidden="true" />
+      <Method Name="MakeLabel" Hidden="true" />
+      <Property Name="OutputStream" Hidden="true" />
+      <Method Name="visitExpr" Hidden="true" />
+      <Method Name="visitStmt" Hidden="true" />
+      <Method Name="visitStmtList" Hidden="true" />
+      <Method Name="WithBraces" Hidden="true" />
+      <Method Name="WriteBufferedLines" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>Ag4AQAAAAkCAAAIAICICEBACACAAAEEIgQAAAEFAAAg=</HashCode>
+      <FileName>Backend\CodeGen.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Context" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MiniJava.CLI.Program">
+    <Position X="9.5" Y="7.25" Width="1.5" />
+    <Members>
+      <Method Name="Compile" Hidden="true" />
+      <Method Name="FormatError" Hidden="true" />
+      <Method Name="FormatLocation" Hidden="true" />
+      <Field Name="Instance" Hidden="true" />
+      <Method Name="OutputErrors" Hidden="true" />
+      <Method Name="OutputSummaryLine" Hidden="true" />
+      <Method Name="RealMain" Hidden="true" />
+      <Method Name="SanitizeChar" Hidden="true" />
+      <Field Name="TAB" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAggCCAABgAAAAQAAAAiAAAAEAAAAgAAQAAABAJAAEA=</HashCode>
+      <FileName>CLI\ErrorDisplay.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Context" />
+      <Field Name="Scanner" />
+      <Field Name="Parser" />
+      <Field Name="Checker" />
+      <Field Name="CodeGen" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MiniJava.Frontend.Parser">
+    <Position X="12.25" Y="7" Width="2.25" />
+    <Members>
+      <Field Name="aliasses" Hidden="true" />
+      <Property Name="Classes" Hidden="true" />
+      <Method Name="DoAction" Hidden="true" />
+      <Method Name="Initialize" Hidden="true" />
+      <Method Name="Parser" Hidden="true" />
+      <Method Name="TerminalToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>EAAAAAAEAAEAAQEBABAAAAAAAABIAAgAAAAAABQAAAA=</HashCode>
+      <FileName>Frontend\GeneratedParser.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CompilerContext" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MiniJava.Frontend.Scanner">
+    <Position X="8.25" Y="12.25" Width="2" />
+    <Members>
+      <Method Name="_yytrunc" Hidden="true" />
+      <Method Name="BEGIN" Hidden="true" />
+      <Field Name="buffer" Hidden="true" />
+      <Property Name="Buffer" Hidden="true" />
+      <Method Name="canMergeError" Hidden="true" />
+      <Field Name="cCol" Hidden="true" />
+      <Field Name="code" Hidden="true" />
+      <Field Name="COMMENT" Hidden="true" />
+      <Field Name="comments" Hidden="true" />
+      <Field Name="commentStartLocation" Hidden="true" />
+      <Field Name="ctx" Hidden="true" />
+      <Method Name="currentLocation" Hidden="true" />
+      <Field Name="currentScOrd" Hidden="true" />
+      <Field Name="currentStart" Hidden="true" />
+      <Method Name="ECHO" Hidden="true" />
+      <Field Name="eofNum" Hidden="true" />
+      <Method Name="GetCode" Hidden="true" />
+      <Method Name="GetMaxParseToken" Hidden="true" />
+      <Field Name="goStart" Hidden="true" />
+      <Field Name="initial" Hidden="true" />
+      <Field Name="INITIAL" Hidden="true" />
+      <Field Name="lNum" Hidden="true" />
+      <Method Name="MarkEnd" Hidden="true" />
+      <Method Name="MarkToken" Hidden="true" />
+      <Field Name="maxAccept" Hidden="true" />
+      <Method Name="MkBuffCtx" Hidden="true" />
+      <Method Name="NextState" Hidden="true" />
+      <Field Name="NL_COMMENT" Hidden="true" />
+      <Field Name="NxS" Hidden="true" />
+      <Field Name="parserMax" Hidden="true" />
+      <Method Name="Peek" Hidden="true" />
+      <Field Name="readPos" Hidden="true" />
+      <Method Name="Recurse2" Hidden="true" />
+      <Method Name="RestoreBuffCtx" Hidden="true" />
+      <Method Name="RestoreStateAndPos" Hidden="true" />
+      <Method Name="SaveStateAndPos" Hidden="true" />
+      <Method Name="Scan" Hidden="true" />
+      <Method Name="Scanner" Hidden="true" />
+      <Method Name="SetSource" Hidden="true" />
+      <Field Name="startState" Hidden="true" />
+      <Field Name="state" Hidden="true" />
+      <Field Name="tokCol" Hidden="true" />
+      <Field Name="tokECol" Hidden="true" />
+      <Field Name="tokELin" Hidden="true" />
+      <Field Name="tokEPos" Hidden="true" />
+      <Field Name="tokLin" Hidden="true" />
+      <Field Name="tokPos" Hidden="true" />
+      <Field Name="tokTxt" Hidden="true" />
+      <Property Name="YY_START" Hidden="true" />
+      <Property Name="yycol" Hidden="true" />
+      <Method Name="yyerror" Hidden="true" />
+      <Property Name="yyleng" Hidden="true" />
+      <Method Name="yyless" Hidden="true" />
+      <Property Name="yyline" Hidden="true" />
+      <Property Name="yypos" Hidden="true" />
+      <Property Name="yytext" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Enum Name="MiniJava.Frontend.Scanner.Result" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Frontend\Scanner.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="MiniJava.Frontend.Scanner.Table" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Frontend\Scanner.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="MiniJava.Frontend.Scanner.Context" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Frontend\Scanner.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="MiniJava.Frontend.Scanner.BufferContext" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Frontend\Scanner.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>EiR6EAgAktiGAggBIAAgBMAAKIAMAookJDBgCAmAQQE=</HashCode>
+      <FileName>Frontend\Scanner.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="CompilerContext" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MiniJava.CompileError" BaseTypeListCollapsed="true">
+    <Position X="14.25" Y="10.75" Width="1.5" />
+    <Members>
+      <Method Name="CompileError" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAQAAAIAAAAAAAAAAAAAAAAAIAAEAAA=</HashCode>
+      <FileName>Generic\CompileError.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MiniJava.CompilerContext">
+    <Position X="11.25" Y="10" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAEQAQAAAAAgAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Generic\CompilerContext.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Errors" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MiniJava.SemanticCheck.MethodEvaluationContext">
+    <Position X="5.25" Y="9.25" Width="2" />
+    <Members>
+      <Method Name="MethodEvaluationContext" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAAAAAIAAIgAgAAAACACAAAAAAABEAAAAA=</HashCode>
+      <FileName>SemanticCheck\MethodEvaluationContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniJava.SemanticCheck.Checker" BaseTypeListCollapsed="true">
+    <Position X="8.5" Y="10.25" Width="1.5" />
+    <Members>
+      <Method Name="bindVariable" Hidden="true" />
+      <Method Name="Checker" Hidden="true" />
+      <Method Name="checkExprHasArrayType" Hidden="true" />
+      <Method Name="checkExprHasType" Hidden="true" />
+      <Method Name="checkExprsHaveTypes" Hidden="true" />
+      <Method Name="checkField" Hidden="true" />
+      <Method Name="checkInheritanceLoop" Hidden="true" />
+      <Method Name="checkMethod" Hidden="true" />
+      <Method Name="checkTypeValidity" Hidden="true" />
+      <Method Name="declareVariable" Hidden="true" />
+      <Method Name="evalExpr" Hidden="true" />
+      <Method Name="isAssignableTo" Hidden="true" />
+      <Method Name="lookupClass" Hidden="true" />
+      <Method Name="lookupMethod" Hidden="true" />
+      <Method Name="resolveField" Hidden="true" />
+      <Method Name="resolveSuperClasses" Hidden="true" />
+      <Method Name="visitExpr" Hidden="true" />
+      <Method Name="visitStmt" Hidden="true" />
+      <Method Name="visitStmtList" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AABAQQgAAgoQAIAAAACAAAACAAAAREEgAEBBAAAAAAA=</HashCode>
+      <FileName>SemanticCheck\Checker.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MethodContext" />
+      <Property Name="Context" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="QUT.Gppg.ShiftReduceParser&lt;TValue, TSpan&gt;">
+    <Position X="12.25" Y="4.25" Width="2.5" />
+    <Members>
+      <Method Name="AddState" Hidden="true" />
+      <Method Name="CharToString" Hidden="true" />
+      <Method Name="DoAction" Hidden="true" />
+      <Method Name="Initialize" Hidden="true" />
+      <Method Name="InitNonTerminals" Hidden="true" />
+      <Method Name="InitRules" Hidden="true" />
+      <Method Name="InitSpecialTokens" Hidden="true" />
+      <Method Name="InitStateTable" Hidden="true" />
+      <Property Name="LocationStack" Hidden="true" />
+      <Method Name="ShiftReduceParser" Hidden="true" />
+      <Method Name="TerminalToString" Hidden="true" />
+      <Property Name="ValueStack" Hidden="true" />
+      <Method Name="YYAbort" Hidden="true" />
+      <Method Name="YYAccept" Hidden="true" />
+      <Method Name="yyclearin" Hidden="true" />
+      <Method Name="yyerrok" Hidden="true" />
+      <Method Name="YYError" Hidden="true" />
+      <Property Name="YYRecovering" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

@@ -1,0 +1,4 @@
+
+Unhandled Exception: System.InvalidOperationException: Assertion failed at 3:8-21
+   at MiniJava.RuntimeHelpers.Assert(Boolean assertion, String location)
+   at CrashTestAssertFail.Main()

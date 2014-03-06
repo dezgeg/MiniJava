@@ -1,0 +1,26 @@
+bad_local_type.mj:6:8-11: error: Nonexisting class 'B' in variable declaration
+            B b; // should complain
+            ^^^
+bad_local_type.mj:7:8-14: error: Nonexisting class 'B' in variable declaration
+            B[] bs; // should complain
+            ^^^^^^
+bad_local_type.mj:8:8-14: error: Type 'void' is not acceptable in variable declaration
+            void v;
+            ^^^^^^
+bad_local_type.mj:9:8-17: error: Array of type 'void' is not acceptable in variable declaration
+            void[] vs;
+            ^^^^^^^^^
+bad_local_type.mj:11:21-24: error: Nonexisting class 'B' in method argument declaration
+        public void bad1(B b) {}
+                         ^^^
+bad_local_type.mj:12:21-27: error: Nonexisting class 'B' in method argument declaration
+        public void bad2(B[] bs) {}
+                         ^^^^^^
+bad_local_type.mj:13:21-27: error: Type 'void' is not acceptable in method argument declaration
+        public void bad3(void v) {}
+                         ^^^^^^
+bad_local_type.mj:14:21-30: error: Array of type 'void' is not acceptable in method argument declaration
+        public void bad4(void[] vs) {}
+                         ^^^^^^^^^
+
+8 errors in total.

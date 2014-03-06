@@ -1,0 +1,19 @@
+class Main
+{
+    public static void main()
+    {
+        new Foo() = null;
+        this = 42;
+        false = true;
+        new int[10].length = false;
+        boolean b;
+        b = 42;
+        Bar bar;
+        bar = new Foo();
+        new void() = new void();
+    }
+}
+class Foo
+{
+}
+class Bar extends Foo {}

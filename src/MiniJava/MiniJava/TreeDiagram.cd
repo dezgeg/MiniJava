@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MiniJava.Frontend.Trees.VariableTree">
+    <Position X="14.5" Y="6.5" Width="1.5" />
+    <Members>
+      <Method Name="Accept" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+      <Method Name="VariableTree" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAgAAAAAAAAAAEAAAAAAQAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Frontend\Trees\ExprTrees\AccessExprTrees.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniJava.Frontend.Trees.ArrayLengthExprTree">
+    <Position X="10" Y="4.75" Width="1.5" />
+    <Members>
+      <Method Name="Accept" Hidden="true" />
+      <Method Name="ArrayLengthExprTree" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Frontend\Trees\ExprTrees\AccessExprTrees.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniJava.Frontend.Trees.ArrayAccessExprTree">
+    <Position X="16.75" Y="6.5" Width="1.5" />
+    <Members>
+      <Method Name="Accept" Hidden="true" />
+      <Method Name="ArrayAccessExprTree" Hidden="true" />
+      <Property Name="IsLValueExpr" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAIgAAAAAAAAAAEAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Frontend\Trees\ExprTrees\AccessExprTrees.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniJava.Frontend.Trees.FieldAccessExprTree">
+    <Position X="19" Y="6.5" Width="1.5" />
+    <Members>
+      <Method Name="Accept" Hidden="true" />
+      <Method Name="FieldAccessExprTree" Hidden="true" />
+      <Property Name="IsLValueExpr" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAgAAAAAAAAAAEAAAAAAAAAAAAAAAACAAAAAAAgCA=</HashCode>
+      <FileName>Frontend\Trees\ExprTrees\AccessExprTrees.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniJava.Frontend.Trees.BinopTree">
+    <Position X="5.5" Y="4.75" Width="1.5" />
+    <Members>
+      <Method Name="Accept" Hidden="true" />
+      <Method Name="BinopTree" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAQAAQAAIAA=</HashCode>
+      <FileName>Frontend\Trees\ExprTrees\OperatorTrees.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniJava.Frontend.Trees.UnopTree">
+    <Position X="3.25" Y="4.75" Width="1.5" />
+    <Members>
+      <Method Name="Accept" Hidden="true" />
+      <Method Name="Create" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+      <Method Name="UnopTree" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAEAAAAAAAAAAAAAEAAAAAAAAEAIAA=</HashCode>
+      <FileName>Frontend\Trees\ExprTrees\OperatorTrees.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniJava.Frontend.Trees.LiteralValueTree">
+    <Position X="21.25" Y="6" Width="1.5" />
+    <Members>
+      <Method Name="Accept" Hidden="true" />
+      <Field Name="ALLOWED_TYPES" Hidden="true" />
+      <Method Name="LiteralValueTree" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAQAAgQAAAAAA=</HashCode>
+      <FileName>Frontend\Trees\ExprTrees\NullaryExprTrees.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniJava.Frontend.Trees.ThisLiteralTree">
+    <Position X="23.5" Y="6" Width="1.5" />
+    <Members>
+      <Method Name="Accept" Hidden="true" />
+      <Method Name="ThisLiteralTree" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Frontend\Trees\ExprTrees\NullaryExprTrees.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniJava.Frontend.Trees.NullLiteralTree">
+    <Position X="25.75" Y="6" Width="1.5" />
+    <Members>
+      <Method Name="Accept" Hidden="true" />
+      <Method Name="NullLiteralTree" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Frontend\Trees\ExprTrees\NullaryExprTrees.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniJava.Frontend.Trees.MethodCallExprTree">
+    <Position X="12.25" Y="4.75" Width="1.5" />
+    <Members>
+      <Method Name="Accept" Hidden="true" />
+      <Method Name="MethodCallExprTree" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAEAAAgAAAAAAAAgAAACAAAAAAEAAA=</HashCode>
+      <FileName>Frontend\Trees\ExprTrees\ObjectExprTrees.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniJava.Frontend.Trees.NewExprTree">
+    <Position X="7.75" Y="4.75" Width="1.5" />
+    <Members>
+      <Method Name="Accept" Hidden="true" />
+      <Method Name="NewExprTree" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAABAAAAAAAAAEAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Frontend\Trees\ExprTrees\ObjectExprTrees.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniJava.Frontend.Trees.IfStmtTree">
+    <Position X="30.25" Y="4" Width="1.5" />
+    <Members>
+      <Method Name="Accept" Hidden="true" />
+      <Method Name="IfStmtTree" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAABAAACAAAAEAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Frontend\Trees\StmtTrees\IfStmtTree.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniJava.Frontend.Trees.PrintStmtTree">
+    <Position X="32.5" Y="4" Width="1.5" />
+    <Members>
+      <Method Name="Accept" Hidden="true" />
+      <Method Name="PrintStmtTree" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Frontend\Trees\StmtTrees\SimpleStmtTrees.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniJava.Frontend.Trees.AssertStmtTree">
+    <Position X="34.75" Y="4" Width="1.5" />
+    <Members>
+      <Method Name="Accept" Hidden="true" />
+      <Method Name="AssertStmtTree" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Frontend\Trees\StmtTrees\SimpleStmtTrees.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniJava.Frontend.Trees.ReturnStmtTree">
+    <Position X="39.25" Y="4" Width="1.5" />
+    <Members>
+      <Method Name="Accept" Hidden="true" />
+      <Method Name="ReturnStmtTree" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Frontend\Trees\StmtTrees\SimpleStmtTrees.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniJava.Frontend.Trees.WhileStmtTree">
+    <Position X="28" Y="4" Width="1.5" />
+    <Members>
+      <Method Name="Accept" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+      <Method Name="WhileStmtTree" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAACAAAAEAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Frontend\Trees\StmtTrees\WhileStmtTree.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniJava.Frontend.Trees.ExprTree">
+    <Position X="14.5" Y="2.25" Width="1.5" />
+    <Members>
+      <Method Name="ExprTree" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Frontend\Trees\ExprTrees\ExprTree.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniJava.Frontend.Trees.StmtTree">
+    <Position X="34.75" Y="2.25" Width="1.5" />
+    <Members>
+      <Method Name="StmtTree" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Frontend\Trees\StmtTrees\StmtTree.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniJava.Frontend.Trees.StmtListTree">
+    <Position X="37" Y="4" Width="1.5" />
+    <Members>
+      <Method Name="Accept" Hidden="true" />
+      <Method Name="StmtListTree" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAEAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Frontend\Trees\StmtTrees\StmtTree.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniJava.Frontend.Trees.ExprStmtTree">
+    <Position X="41.5" Y="4" Width="1.5" />
+    <Members>
+      <Method Name="Accept" Hidden="true" />
+      <Method Name="ExprStmtTree" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Frontend\Trees\StmtTrees\StmtTree.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniJava.Frontend.Tree">
+    <Position X="22.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="Equals" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+      <Method Name="Tree" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEgAIAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Frontend\Trees\Tree.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniJava.Frontend.Trees.LValueExprTree">
+    <Position X="16.75" Y="4.75" Width="1.5" />
+    <Members>
+      <Method Name="LValueExprTree" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Frontend\Trees\ExprTrees\ExprTree.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniJava.Frontend.Trees.LiteralExprTree" Collapsed="true">
+    <Position X="23.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Frontend\Trees\ExprTrees\ExprTree.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

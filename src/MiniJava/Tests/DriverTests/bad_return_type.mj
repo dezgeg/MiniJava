@@ -1,0 +1,9 @@
+class A {
+    public B foo1() { return null; }
+    public B[] foo2() { return null; }
+    public void[] foo3() { return null; }
+    public void foo4() { return null; }
+    public void foo5() { return 1; }
+    public void foo6() { return false; }
+
+}

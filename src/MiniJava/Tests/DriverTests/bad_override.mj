@@ -1,0 +1,9 @@
+class B
+{
+    public void foo() {}
+}
+class D extends B
+{
+    public int foo()
+    { return 1; } // should complain about nonmatching override
+}

@@ -1,0 +1,26 @@
+bad_args.mj:7:8-17: error: Wrong number of arguments when calling method 'foo', expected 1, but got 0
+            foo.foo();
+            ^^^^^^^^^
+bad_args.mj:8:16-20: error: Type 'boolean' not convertible to type of argument 1 of method 'foo': 'int'
+            foo.foo(true);
+                    ^^^^
+bad_args.mj:9:8-25: error: Wrong number of arguments when calling method 'foo', expected 1, but got 2
+            foo.foo(10, true);
+            ^^^^^^^^^^^^^^^^^
+bad_args.mj:10:16-17: error: Type 'int' not convertible to type of argument 1 of method 'bar': 'Foo'
+            foo.bar(1);
+                    ^
+bad_args.mj:11:16-20: error: Type 'boolean' not convertible to type of argument 1 of method 'bar': 'Foo'
+            foo.bar(true);
+                    ^^^^
+bad_args.mj:12:16-28: error: Type 'void' is not acceptable in new expression
+            foo.bar(new void[10]);
+                    ^^^^^^^^^^^^
+bad_args.mj:13:16-27: error: Type 'Foo[]' not convertible to type of argument 1 of method 'bar': 'Foo'
+            foo.bar(new Foo[10]);
+                    ^^^^^^^^^^^
+bad_args.mj:14:16-29: error: Type 'void' not convertible to type of argument 1 of method 'bar': 'Foo'
+            foo.bar(foo.bar(null));
+                    ^^^^^^^^^^^^^
+
+8 errors in total.

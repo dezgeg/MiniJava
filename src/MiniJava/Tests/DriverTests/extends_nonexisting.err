@@ -1,0 +1,5 @@
+extends_nonexisting.mj:1:0-17: error: Class 'A' has a nonexisting superclass 'B'
+    class A extends B {} // should complain
+    ^^^^^^^^^^^^^^^^^
+
+1 errors in total.

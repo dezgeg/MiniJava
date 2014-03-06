@@ -1,0 +1,12 @@
+class Main
+{
+    public static void main()
+    {
+        new int(); // should complain
+        new boolean(); // should complain
+        new void(); // should complain
+        new void[10]; // should complain
+        new Nonexistent(); // should complain
+        new Nonexistent[10]; // should complain
+    }
+}

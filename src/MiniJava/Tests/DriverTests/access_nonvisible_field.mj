@@ -1,0 +1,16 @@
+class Main
+{
+    public static void main()
+    {
+        assert(new List().value == 0); // should complain about private field
+    }
+}
+class List
+{
+    List next;
+    int value;
+}
+class EvilList extends List
+{
+    public boolean evil() { return this.value == 666; }
+}

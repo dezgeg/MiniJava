@@ -1,0 +1,24 @@
+class A 
+{
+    // duplicate args
+    public void foo(int x, boolean x) {} // should complain
+    // duplicate arg + local
+    public void foo(int x)
+    {
+        boolean x; //should complain
+    }
+    // duplicate args in different scopes
+    public void bar()
+    {
+        int y;
+        {
+            boolean y; // should complain
+        }
+    }
+    // duplicate args in same scope
+    public void baz()
+    {
+        int z;
+        boolean z; // should complain
+    }
+}

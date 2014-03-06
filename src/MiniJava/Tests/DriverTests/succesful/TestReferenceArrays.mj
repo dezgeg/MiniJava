@@ -1,0 +1,31 @@
+class TestReferenceArrays {
+    public static void main() {
+        B[] bs;
+        B[] bs2;
+        bs = new B[5];
+        bs2 = bs;
+        assert bs[0] == null;
+        assert bs == bs2;
+
+        B b;
+        D d;
+        bs[0] = b;
+        bs[1] = d;
+        assert bs[0] == b && bs[1] == d;
+        assert bs == bs2;
+
+        D[] ds;
+        ds = new D[10];
+        ds[0] = d;
+        ds[1] = new D();
+        bs = ds;
+
+        assert bs == ds;
+        assert bs[0] == ds[0] && bs[0] == d;
+        bs[2] = new D();
+        bs[3] = new B(); // this should crash at runtime!
+        assert false;
+    }
+}
+class B {}
+class D extends B {}

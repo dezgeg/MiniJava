@@ -1,0 +1,30 @@
+class TestComparisonOps {
+    public static void main() { 
+        assert 1 < 2;
+        assert 1 <= 2;
+        assert 2 > 1;
+        assert 2 >= 1;
+        assert 1 == 1;
+        assert 1 != 2;
+        assert !(1 < 1);
+        assert !(2 > 2);
+
+        assert !true == false;
+        assert !false == true;
+        assert null == null;
+
+        B b;
+        b = new B();
+        assert b == b;
+        assert b != new B();
+        assert b != new D();
+        D d;
+        d = new D();
+        assert b != d;
+        b = d;
+        assert b == d;
+        assert d != new D();
+    }
+}
+class B {}
+class D extends B {}

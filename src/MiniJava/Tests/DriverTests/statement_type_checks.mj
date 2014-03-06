@@ -1,0 +1,17 @@
+class Main
+{
+    public static void main()
+    {
+        assert 1;
+        assert null;
+        assert new Main();
+
+        if(1);
+        if(null);
+        if(new Main());
+
+        while(1);
+        while(null);
+        while(new Main());
+    }
+}

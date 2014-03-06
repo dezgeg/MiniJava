@@ -1,0 +1,14 @@
+variable_scopes.mj:20:12-13: error: Unknown symbol 'y'
+                y = x; // not ok
+                ^
+variable_scopes.mj:21:12-15: error: Local variable 'c' already declared
+                C c; // not ok
+                ^^^
+variable_scopes.mj:15:8-11: note: 'c' previously declared here
+            C c; // ok
+            ^^^
+variable_scopes.mj:22:12-28: error: Value of type 'boolean' is not assignable to lvalue of type 'int'
+                in_class = false; // ofc not ok
+                ^^^^^^^^^^^^^^^^
+
+3 errors in total.

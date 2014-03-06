@@ -1,0 +1,35 @@
+duplicate_toplevel_decls.mj:2:0-7: error: Duplicate class 'A'
+    class A {} // should complain
+    ^^^^^^^
+duplicate_toplevel_decls.mj:1:0-7: note: Class 'A' first declared here
+    class A {}
+    ^^^^^^^
+duplicate_toplevel_decls.mj:7:4-16: error: Duplicate field 'foo'
+        boolean foo; // should complain
+        ^^^^^^^^^^^^
+duplicate_toplevel_decls.mj:6:4-12: note: Field 'foo' first declared here
+        int foo;
+        ^^^^^^^^
+duplicate_toplevel_decls.mj:13:4-31: error: Duplicate method 'foo'
+        public int foo(boolean bar) {} // should complain
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+duplicate_toplevel_decls.mj:12:4-21: note: Method 'foo' first declared here
+        public void foo() {}
+        ^^^^^^^^^^^^^^^^^
+duplicate_toplevel_decls.mj:13:4-34: error: Missing return statement
+        public int foo(boolean bar) {} // should complain
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+duplicate_toplevel_decls.mj:19:4-32: error: Duplicate declaration of main method
+        public static void main() {}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+duplicate_toplevel_decls.mj:18:4-29: note: Main method first declared in class 'Main12' here
+        public static void main() {}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+duplicate_toplevel_decls.mj:23:4-32: error: Duplicate declaration of main method
+        public static void main() {}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+duplicate_toplevel_decls.mj:18:4-29: note: Main method first declared in class 'Main12' here
+        public static void main() {}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+6 errors in total.

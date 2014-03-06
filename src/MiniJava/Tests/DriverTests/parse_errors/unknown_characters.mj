@@ -1,0 +1,9 @@
+class MissingSemicolon
+{
+    public static void main()
+    {
+         int f$#uc@k;
+         $$@$@$@$@$@$@@$@$@$@$@~~~~~~~~
+         System.out.println(-1);
+    }
+}

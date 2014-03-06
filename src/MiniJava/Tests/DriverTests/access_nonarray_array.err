@@ -1,0 +1,32 @@
+access_nonarray_array.mj:6:9-14: error: Array type expected instead of 'int'
+            (1 + 1)[0] = 42;
+             ^^^^^
+access_nonarray_array.mj:7:8-13: error: Array type expected instead of 'boolean'
+            false[1] = true;
+            ^^^^^
+access_nonarray_array.mj:8:8-24: error: Array type expected instead of 'void'
+            new Main().foo()[0] = 1;
+            ^^^^^^^^^^^^^^^^
+access_nonarray_array.mj:9:8-18: error: Array type expected instead of 'Main'
+            new Main()[0] = null;
+            ^^^^^^^^^^
+access_nonarray_array.mj:10:8-12: error: Array type expected instead of '(null constant type)'
+            null[0] = 1;
+            ^^^^
+access_nonarray_array.mj:12:28-33: error: Array type expected instead of 'int'
+            System.out.println((1 + 1)[0]);
+                                ^^^^^
+access_nonarray_array.mj:13:27-32: error: Array type expected instead of 'boolean'
+            System.out.println(false[1]);
+                               ^^^^^
+access_nonarray_array.mj:14:27-43: error: Array type expected instead of 'void'
+            System.out.println(new Main().foo()[0]);
+                               ^^^^^^^^^^^^^^^^
+access_nonarray_array.mj:15:27-37: error: Array type expected instead of 'Main'
+            System.out.println(new Main()[0]);
+                               ^^^^^^^^^^
+access_nonarray_array.mj:16:27-31: error: Array type expected instead of '(null constant type)'
+            System.out.println(null[0]);
+                               ^^^^
+
+10 errors in total.

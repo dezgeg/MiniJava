@@ -1,0 +1,5 @@
+extends_itself.mj:1:0-17: error: Inheritance loop detected: A -> A
+    class A extends A {} // should complain
+    ^^^^^^^^^^^^^^^^^
+
+1 errors in total.

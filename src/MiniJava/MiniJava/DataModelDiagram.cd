@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MiniJava.CompileError" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="3" Width="1.5" />
+    <Members>
+      <Method Name="CompareTo" Hidden="true" />
+      <Method Name="CompileError" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAQAAAIAAAAAAAAAAAAAAAAAIAAEAAA=</HashCode>
+      <FileName>Generic\CompileError.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ContextLocation" />
+      <Property Name="Location" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MiniJava.JavaType">
+    <Position X="9.5" Y="6" Width="1.5" />
+    <Members>
+      <Method Name="Equals" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAEggAAAAABAAACAAIAAAAAAAAACACA=</HashCode>
+      <FileName>Generic\JavaType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniJava.NullConstantType" Collapsed="true">
+    <Position X="6.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Generic\JavaType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniJava.JavaClassType">
+    <Position X="8.5" Y="9" Width="1.5" />
+    <Members>
+      <Method Name="JavaClassType" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEEAAAAAARAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Generic\JavaType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniJava.JavaPrimitiveType">
+    <Position X="10.75" Y="9" Width="1.5" />
+    <Members>
+      <Method Name="JavaPrimitiveType" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Generic\JavaType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiniJava.JavaArrayType">
+    <Position X="12.75" Y="9" Width="1.5" />
+    <Members>
+      <Method Name="JavaArrayType" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEEAAAAAABAAACAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Generic\JavaType.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BaseType" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MiniJava.SemanticCheck.MethodEvaluationContext">
+    <Position X="3.25" Y="5.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAAAAAIAAIgAgAAAACACAAAAAAABEAAAAA=</HashCode>
+      <FileName>SemanticCheck\MethodEvaluationContext.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Method" />
+      <Property Name="Class" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MiniJava.Frontend.Trees.MethodTree">
+    <Position X="6.5" Y="6" Width="1.5" />
+    <Members>
+      <Method Name="Equals" Hidden="true" />
+      <Method Name="MethodTree" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAEgAIBAQQAAAAACYAAIAABAAAEAAE=</HashCode>
+      <FileName>Frontend\Trees\Declarations\MethodTree.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DeclLocation" />
+      <Property Name="EarliestDeclaringClass" />
+      <Property Name="ReturnType" />
+      <Property Name="Location" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="LocalVariableRegisters" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MiniJava.Frontend.Trees.ClassTree">
+    <Position X="4.75" Y="3.25" Width="1.75" />
+    <Members>
+      <Method Name="ClassTree" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAQAAAAAAAAAIAAAQCAAAAAAAAAAAAAAAAgEg=</HashCode>
+      <FileName>Frontend\Trees\Declarations\ClassTree.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DeclLocation" />
+      <Property Name="Location" />
+      <Property Name="SuperClass" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Methods" />
+      <Property Name="Fields" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MiniJava.Frontend.Trees.FieldTree">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <Members>
+      <Method Name="FieldTree" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAQAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Frontend\Trees\Declarations\FieldTree.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Location" />
+      <Property Name="Type" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MiniJava.CompilerContext">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="CompilerContext" Hidden="true" />
+      <Method Name="GetNoncollidingName" Hidden="true" />
+      <Field Name="nameGenCounter" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAEQAQAAAAAgAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Generic\CompilerContext.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MainClass" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Errors" />
+      <Property Name="Classes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Struct Name="MiniJava.Frontend.Location" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <Members>
+      <Method Name="Equals" Hidden="true" />
+      <Method Name="GetHashCode" Hidden="true" />
+      <Method Name="Location" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIQEgAAAAAAAACAAIYAAEAAAIAAAAAA=</HashCode>
+      <FileName>Generic\Location.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

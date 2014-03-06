@@ -1,0 +1,25 @@
+class C
+{
+    int in_class;
+    public void foo()
+    {
+        if(true)
+        {
+            // ok
+            boolean x;
+            int y;
+            C c;
+            boolean in_class;
+            in_class = true;
+        }
+        C c; // ok
+        in_class = 42;
+        while(false)
+        {
+            int x; // should be ok
+            y = x; // not ok
+            C c; // not ok
+            in_class = false; // ofc not ok
+        }
+    }
+}

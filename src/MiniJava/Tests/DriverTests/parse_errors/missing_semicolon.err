@@ -1,0 +1,8 @@
+missing_semicolon.mj:6:6-12: error: Syntax error, unexpected System, expecting ';'
+          System.out.println(66);
+          ^^^^^^
+missing_semicolon.mj:7:27-30: error: Unknown symbol 'foo'
+            System.out.println(foo); // this should complain about foo
+                               ^^^
+
+2 errors in total.

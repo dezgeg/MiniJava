@@ -1,0 +1,14 @@
+nonarray_length.mj:5:8-17: error: Array type expected instead of 'Foo'
+            new Foo().length; // should complain
+            ^^^^^^^^^
+nonarray_length.mj:6:8-10: error: Array type expected instead of 'int'
+            10.length; // should complain
+            ^^
+nonarray_length.mj:7:8-13: error: Array type expected instead of 'boolean'
+            false.length; // should complain
+            ^^^^^
+nonarray_length.mj:8:8-12: error: Array type expected instead of '(null constant type)'
+            null.length; // should complain
+            ^^^^
+
+4 errors in total.

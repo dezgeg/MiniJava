@@ -1,0 +1,22 @@
+class Foo
+{
+    int x;
+    public int test1()
+    {
+    }
+    public int test2()
+    {
+        if(true) return 1;
+    }
+    public int test4()
+    {
+        assert false;
+    }
+    public int test5()
+    {
+        while(true)
+        {
+            x = x + 1;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+assign_to_nonmatching_array_type.mj:6:8-32: error: Value of type 'boolean' is not assignable to lvalue of type 'int'
+            (new int[10])[0] = false; // should complain
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+assign_to_nonmatching_array_type.mj:7:8-31: error: Value of type '(null constant type)' is not assignable to lvalue of type 'int'
+            (new int[10])[0] = null; // should complain
+            ^^^^^^^^^^^^^^^^^^^^^^^
+assign_to_nonmatching_array_type.mj:8:8-43: error: Value of type 'void' is not assignable to lvalue of type 'int'
+            (new int[10])[0] = new Main().foo(); // should complain
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+assign_to_nonmatching_array_type.mj:10:8-32: error: Value of type 'C' is not assignable to lvalue of type 'D'
+            (new D[10])[0] = new C();
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+
+4 errors in total.

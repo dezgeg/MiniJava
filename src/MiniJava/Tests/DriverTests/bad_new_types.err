@@ -1,0 +1,20 @@
+bad_new_types.mj:5:8-17: error: Primitive type 'int' is not acceptable in new expression
+            new int(); // should complain
+            ^^^^^^^^^
+bad_new_types.mj:6:8-21: error: Primitive type 'boolean' is not acceptable in new expression
+            new boolean(); // should complain
+            ^^^^^^^^^^^^^
+bad_new_types.mj:7:8-18: error: Primitive type 'void' is not acceptable in new expression
+            new void(); // should complain
+            ^^^^^^^^^^
+bad_new_types.mj:8:8-20: error: Type 'void' is not acceptable in new expression
+            new void[10]; // should complain
+            ^^^^^^^^^^^^
+bad_new_types.mj:9:8-25: error: Nonexisting class 'Nonexistent' in new expression
+            new Nonexistent(); // should complain
+            ^^^^^^^^^^^^^^^^^
+bad_new_types.mj:10:8-27: error: Nonexisting class 'Nonexistent' in new expression
+            new Nonexistent[10]; // should complain
+            ^^^^^^^^^^^^^^^^^^^
+
+6 errors in total.

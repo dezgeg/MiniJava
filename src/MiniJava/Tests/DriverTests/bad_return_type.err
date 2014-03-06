@@ -1,0 +1,20 @@
+bad_return_type.mj:2:4-19: error: Nonexisting class 'B' in return type of method 'public B foo1()' in class 'A'
+        public B foo1() { return null; }
+        ^^^^^^^^^^^^^^^
+bad_return_type.mj:3:4-21: error: Nonexisting class 'B' in return type of method 'public B[] foo2()' in class 'A'
+        public B[] foo2() { return null; }
+        ^^^^^^^^^^^^^^^^^
+bad_return_type.mj:4:4-24: error: Array of type 'void' is not acceptable in return type of method 'public void[] foo3()' in class 'A'
+        public void[] foo3() { return null; }
+        ^^^^^^^^^^^^^^^^^^^^
+bad_return_type.mj:5:32-36: error: Type of returned value '(null constant type)' not assignable to type 'void'
+        public void foo4() { return null; }
+                                    ^^^^
+bad_return_type.mj:6:32-33: error: Type of returned value 'int' not assignable to type 'void'
+        public void foo5() { return 1; }
+                                    ^
+bad_return_type.mj:7:32-37: error: Type of returned value 'boolean' not assignable to type 'void'
+        public void foo6() { return false; }
+                                    ^^^^^
+
+6 errors in total.

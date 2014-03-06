@@ -1,0 +1,132 @@
+
+// ==========================================================================
+//  GPPG error listing for yacc source file <../parse.y>
+// ==========================================================================
+//  Version:  1.3.5.190
+//  Machine:  melkki
+//  DateTime: 22/03/2012 18:00:32
+//  UserName: tmtynkky
+// ==========================================================================
+
+
+%token Assert Boolean Class Else Extends False If Int Length Main New Out PrintLn Public Return Static System This True Void While
+%token IntLiteral Identifier
+%token EQ NE GE LE
+%token DIM
+
+%%
+program: main_class_decl opt_class_decls
+	   ;
+
+opt_class_decls: /* nothing */
+			   | opt_class_decls class_decl
+			   ;
+
+main_class_decl: Class Identifier '{' Public Static Void Main '(' ')' '{' opt_statement_list '}' '}'
+			   ;
+class_decl: Class Identifier opt_extends '{' opt_class_entries '}'
+		  ;
+opt_extends: /* nothing */
+		   | Extends Identifier
+		   ;
+opt_class_entries: /* nothing */
+				 | opt_class_entries class_entry
+				 ;
+class_entry: var_decl
+		   | method_decl
+		   ;
+method_decl: Public return_type Identifier '(' arg_list ')' '{' opt_statement_list '}'
+		   ;
+return_type: Void
+		   | type
+		   ;
+type: basic_type
+	| basic_type DIM
+	;
+basic_type: Int
+		  | Boolean
+		  | Identifier
+		  ;
+arg_list: /* nothing */
+		| arg_decl arg_decl_list
+		;
+arg_decl_list: /* nothing */
+			 | arg_decl_list ',' arg_decl
+			 ;
+arg_decl: type Identifier
+		;
+opt_statement_list: /* nothing */
+				  | opt_statement_list statement
+				  ;
+var_decl: type Identifier ';'
+		;
+statement: '{' opt_statement_list '}'
+		 | If '(' expr ')' statement opt_else
+		 | While '(' expr ')' statement
+		 | Assert '(' expr ')'
+		 | var_decl
+		 | System '.' Out '.' PrintLn '(' expr ')' ';'
+		 | Return expr ';'
+		 | expr ';'
+		 ;
+opt_else: /* nothing */
+		| Else statement
+		;
+expr: logical_or_expr '=' expr
+	| logical_or_expr
+	;
+logical_or_expr: cmp_expr
+			| logical_or_expr '||' logical_and_expr
+//-------------------^
+// Error: Literal string terminated by EOL
+// ---------------------------------------
+			;
+logical_and_expr: cmp_expr
+			| logical_and_expr '&&' cmp_expr
+			;
+cmp_expr: cmp_expr EQ rel_expr
+		| cmp_expr NE rel_expr
+		| rel_expr
+		;
+rel_expr: term_expr
+		| rel_expr '<' term_expr
+		| rel_expr '>' term_expr
+		| rel_expr LE term_expr
+		| rel_expr GE term_expr
+		;
+
+term_expr: factor_expr
+		 | term_expr '+' factor_expr
+		 | term_expr '-' factor_expr
+		 ;
+factor_expr: unary_expr
+		 | factor_expr '*' unary_expr
+		 | factor_expr '/' unary_expr
+		 | factor_expr '%' unary_expr
+		 ;
+unary_expr: new_expr
+		  | '-' unary_expr
+		  | '!' unary_expr
+		  ;
+new_expr: New basic_type opt_array_expr
+		| dot_expr
+		;
+opt_array_expr: /* nothing */
+			  | '[' expr ']'
+			  ;
+dot_expr: dot_expr '.' Length
+		| dot_expr '.' Identifier
+		| dot_expr '.' Identifier '(' arg_list ')'
+		| dot_expr '[' expr ']'
+		| object_expr
+		;
+object_expr: This
+		   | bool_literal
+		   | IntLiteral
+		   | Identifier
+		   | '(' expr ')'
+		   ;
+bool_literal: True
+			| False
+// ==========================================================================
+

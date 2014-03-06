@@ -1,0 +1,10 @@
+missing_return.mj:4-6:4-5: error: Missing return statement
+missing_return.mj:9:8-26: error: Missing return statement
+            if(true) return 1;
+            ^^^^^^^^^^^^^^^^^^
+missing_return.mj:13:8-21: error: Missing return statement
+            assert false;
+            ^^^^^^^^^^^^^
+missing_return.mj:17-20:8-9: error: Missing return statement
+
+4 errors in total.

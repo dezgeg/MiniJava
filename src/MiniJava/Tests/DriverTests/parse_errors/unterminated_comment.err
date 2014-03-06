@@ -1,0 +1,7 @@
+unterminated_comment.mj:8: error: Unterminated comment
+unterminated_comment.mj:5:31-33: note: Comment started here
+            System.out.println(x + /* lalalalalalaa
+                                   ^^
+unterminated_comment.mj:8: error: Syntax error, unexpected EOF
+
+2 errors in total.

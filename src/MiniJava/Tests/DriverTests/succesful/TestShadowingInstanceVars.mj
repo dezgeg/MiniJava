@@ -1,0 +1,41 @@
+class TestShadowingInstanceVars {
+    public static void main() { 
+        D d;
+        d = new D();
+        assert d.getInB() == 0;
+        assert d.getInD() == 0;
+
+        d.setInB(42);
+        assert d.getInB() == 42;
+        assert d.getInD() == 0;
+
+        d.setInD(-1);
+        assert d.getInB() == 42;
+        assert d.getInD() == -1;
+    }
+}
+class B
+{
+    int inBoth;
+    int called;
+    public void setInB(int x)
+    {
+        inBoth = x;
+    }
+    public int getInB()
+    {
+        return inBoth;
+    }
+}
+class D extends B
+{
+    int inBoth;
+    public void setInD(int x)
+    {
+        inBoth = x;
+    }
+    public int getInD()
+    {
+        return inBoth;
+    }
+}

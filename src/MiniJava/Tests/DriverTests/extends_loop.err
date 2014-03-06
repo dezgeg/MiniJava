@@ -1,0 +1,5 @@
+extends_loop.mj:5:0-17: error: Inheritance loop detected: A -> B -> C -> A
+    class A extends B {}
+    ^^^^^^^^^^^^^^^^^
+
+1 errors in total.

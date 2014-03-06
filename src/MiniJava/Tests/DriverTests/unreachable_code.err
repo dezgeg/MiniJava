@@ -1,0 +1,8 @@
+unreachable_code.mj:9:8-27: error: Unreachable code detected
+            assert unreachable;
+            ^^^^^^^^^^^^^^^^^^^
+unreachable_code.mj:17:8-27: error: Unreachable code detected
+            assert unreachable;
+            ^^^^^^^^^^^^^^^^^^^
+
+2 errors in total.

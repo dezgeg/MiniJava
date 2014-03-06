@@ -1,0 +1,29 @@
+statement_type_checks.mj:5:15-16: error: Value in assert expression should have type 'boolean', but has 'int'
+            assert 1;
+                   ^
+statement_type_checks.mj:6:15-19: error: Value in assert expression should have type 'boolean', but has '(null constant type)'
+            assert null;
+                   ^^^^
+statement_type_checks.mj:7:15-25: error: Value in assert expression should have type 'boolean', but has 'Main'
+            assert new Main();
+                   ^^^^^^^^^^
+statement_type_checks.mj:9:11-12: error: Condition in 'if' statement should have type 'boolean', but has 'int'
+            if(1);
+               ^
+statement_type_checks.mj:10:11-15: error: Condition in 'if' statement should have type 'boolean', but has '(null constant type)'
+            if(null);
+               ^^^^
+statement_type_checks.mj:11:11-21: error: Condition in 'if' statement should have type 'boolean', but has 'Main'
+            if(new Main());
+               ^^^^^^^^^^
+statement_type_checks.mj:13:14-15: error: Condition in 'while' statement should have type 'boolean', but has 'int'
+            while(1);
+                  ^
+statement_type_checks.mj:14:14-18: error: Condition in 'while' statement should have type 'boolean', but has '(null constant type)'
+            while(null);
+                  ^^^^
+statement_type_checks.mj:15:14-24: error: Condition in 'while' statement should have type 'boolean', but has 'Main'
+            while(new Main());
+                  ^^^^^^^^^^
+
+9 errors in total.

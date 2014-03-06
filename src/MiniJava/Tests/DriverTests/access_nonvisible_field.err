@@ -1,0 +1,8 @@
+access_nonvisible_field.mj:5:15-31: error: Cannot access field 'value' private to class 'List' from class 'Main'
+            assert(new List().value == 0); // should complain about private field
+                   ^^^^^^^^^^^^^^^^
+access_nonvisible_field.mj:15:35-45: error: Cannot access field 'value' private to class 'List' from class 'EvilList'
+        public boolean evil() { return this.value == 666; }
+                                       ^^^^^^^^^^
+
+2 errors in total.

@@ -1,0 +1,26 @@
+assign_to_nonint_index.mj:6:22-26: error: Array indexing expression should have type 'int', but has 'boolean'
+            (new int[10])[true] = 42; // should complain
+                          ^^^^
+assign_to_nonint_index.mj:7:22-26: error: Array indexing expression should have type 'int', but has '(null constant type)'
+            (new int[10])[null] = 42; // should complain
+                          ^^^^
+assign_to_nonint_index.mj:8:22-32: error: Array indexing expression should have type 'int', but has 'Main'
+            (new int[10])[new Main()] = 42; // should complain
+                          ^^^^^^^^^^
+assign_to_nonint_index.mj:9:22-38: error: Array indexing expression should have type 'int', but has 'void'
+            (new int[10])[new Main().foo()] = 42; // should complain
+                          ^^^^^^^^^^^^^^^^
+assign_to_nonint_index.mj:11:41-45: error: Array indexing expression should have type 'int', but has 'boolean'
+            System.out.println((new int[10])[true]); // should complain
+                                             ^^^^
+assign_to_nonint_index.mj:12:41-45: error: Array indexing expression should have type 'int', but has '(null constant type)'
+            System.out.println((new int[10])[null]); // should complain
+                                             ^^^^
+assign_to_nonint_index.mj:13:41-51: error: Array indexing expression should have type 'int', but has 'Main'
+            System.out.println((new int[10])[new Main()]); // should complain
+                                             ^^^^^^^^^^
+assign_to_nonint_index.mj:14:41-57: error: Array indexing expression should have type 'int', but has 'void'
+            System.out.println((new int[10])[new Main().foo()]); // should complain
+                                             ^^^^^^^^^^^^^^^^
+
+8 errors in total.

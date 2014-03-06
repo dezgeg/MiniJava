@@ -1,0 +1,14 @@
+bad_field_type.mj:7:4-11: error: Nonexisting class 'B' in field 'foo1' of class 'A'
+        B foo1; // should complain
+        ^^^^^^^
+bad_field_type.mj:8:4-13: error: Nonexisting class 'B' in field 'foo2' of class 'A'
+        B[] foo2; // should complain
+        ^^^^^^^^^
+bad_field_type.mj:9:4-16: error: Array of type 'void' is not acceptable in field 'foo3' of class 'A'
+        void[] foo3; // should complain
+        ^^^^^^^^^^^^
+bad_field_type.mj:10:4-14: error: Type 'void' is not acceptable in field 'foo4' of class 'A'
+        void foo4; // should complain
+        ^^^^^^^^^^
+
+4 errors in total.

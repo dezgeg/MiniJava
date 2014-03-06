@@ -1,0 +1,36 @@
+class Foo
+{
+    boolean stuff;
+    boolean reachable;
+    boolean unreachable;
+    public void test1()
+    {
+        return;
+        assert unreachable;
+    }
+    public int test2()
+    {
+        if(stuff)
+            return 1;
+        else
+            return 2;
+        assert unreachable;
+    }
+    public int test3()
+    {
+        if(true)
+            return 1;
+        // the algorithm isn't fancy enough to detect this
+        assert reachable;
+        return 2;
+    }
+    public void test4()
+    {
+        while(true)
+        {
+            stuff = !stuff;
+        }
+        // the algorithm isn't fancy enough to detect this
+        assert reachable;
+    }
+}

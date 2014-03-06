@@ -1,0 +1,10 @@
+class MissingSemicolon
+{
+    public static void main()
+    {
+        System.out.println(42) // no ;
+      System.out.println(66);
+        System.out.println(foo); // this should complain about foo
+        // i.e. the parser did not completely die
+    }
+}

@@ -1,0 +1,18 @@
+class Main
+{
+    public void foo() {}
+    public static void main()
+    {
+        (1 + 1)[0] = 42;
+        false[1] = true;
+        new Main().foo()[0] = 1;
+        new Main()[0] = null;
+        null[0] = 1;
+
+        System.out.println((1 + 1)[0]);
+        System.out.println(false[1]);
+        System.out.println(new Main().foo()[0]);
+        System.out.println(new Main()[0]);
+        System.out.println(null[0]);
+    }
+}

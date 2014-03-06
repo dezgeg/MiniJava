@@ -1,0 +1,5 @@
+access_undefined_field.mj:7:15-23: error: No field 'foo' in class 'List'
+            return this.foo; // should complain
+                   ^^^^^^^^
+
+1 errors in total.

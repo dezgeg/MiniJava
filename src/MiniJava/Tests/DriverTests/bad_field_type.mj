@@ -1,0 +1,11 @@
+
+class Main
+{
+    public static void main() {}
+}
+class A {
+    B foo1; // should complain
+    B[] foo2; // should complain
+    void[] foo3; // should complain
+    void foo4; // should complain
+}

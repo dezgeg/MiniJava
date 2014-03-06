@@ -1,0 +1,11 @@
+class Main
+{
+    public static void main()
+    {
+        new Foo().length; // should complain
+        10.length; // should complain
+        false.length; // should complain
+        null.length; // should complain
+    }
+}
+class Foo {}

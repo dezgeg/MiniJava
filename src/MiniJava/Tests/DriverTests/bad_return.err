@@ -1,0 +1,35 @@
+bad_return.mj:5:28-35: error: Type of returned value 'B' not assignable to type 'D'
+        public D foo() { return new B(); }
+                                ^^^^^^^
+bad_return.mj:6:32-33: error: Type of returned value 'int' not assignable to type 'void'
+        public void bad1() { return 1; }
+                                    ^
+bad_return.mj:7:32-36: error: Type of returned value 'boolean' not assignable to type 'void'
+        public void bad2() { return true; }
+                                    ^^^^
+bad_return.mj:8:32-36: error: Type of returned value '(null constant type)' not assignable to type 'void'
+        public void bad3() { return null; }
+                                    ^^^^
+bad_return.mj:10:31-35: error: Type of returned value '(null constant type)' not assignable to type 'int'
+        public int badA() { return null; }
+                                   ^^^^
+bad_return.mj:11:31-38: error: Type of returned value 'D' not assignable to type 'int'
+        public int badB() { return new D(); }
+                                   ^^^^^^^
+bad_return.mj:12:31-36: error: Type of returned value 'boolean' not assignable to type 'int'
+        public int badC() { return false; }
+                                   ^^^^^
+bad_return.mj:14:24-31: error: Expression returning type 'int' expected
+        public int ret1() { return; }
+                            ^^^^^^^
+bad_return.mj:15:28-35: error: Expression returning type 'boolean' expected
+        public boolean ret2() { return; }
+                                ^^^^^^^
+bad_return.mj:16:22-29: error: Expression returning type 'B' expected
+        public B ret3() { return; }
+                          ^^^^^^^
+bad_return.mj:17:22-29: error: Expression returning type 'D' expected
+        public D ret4() { return; }
+                          ^^^^^^^
+
+11 errors in total.

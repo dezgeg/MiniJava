@@ -1,0 +1,18 @@
+class B {}
+class D extends B {}
+class C
+{
+    public D foo() { return new B(); }
+    public void bad1() { return 1; }
+    public void bad2() { return true; }
+    public void bad3() { return null; }
+
+    public int badA() { return null; }
+    public int badB() { return new D(); }
+    public int badC() { return false; }
+
+    public int ret1() { return; }
+    public boolean ret2() { return; }
+    public B ret3() { return; }
+    public D ret4() { return; }
+}

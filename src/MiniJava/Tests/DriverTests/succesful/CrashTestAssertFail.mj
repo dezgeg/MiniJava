@@ -1,0 +1,5 @@
+class CrashTestAssertFail {
+    public static void main() { 
+        assert false;
+    }
+}

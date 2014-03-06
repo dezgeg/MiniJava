@@ -1,0 +1,8 @@
+literal_int_overflow.mj:11:19-30: error: Overflow in integer literal
+            tooSmall = -2147483649;
+                       ^^^^^^^^^^^
+literal_int_overflow.mj:12:17-27: error: Overflow in integer literal
+            tooBig = 2147483648;
+                     ^^^^^^^^^^
+
+2 errors in total.
